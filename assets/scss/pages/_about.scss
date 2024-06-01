@@ -1,0 +1,56 @@
+.about {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  .container {
+    gap: 1.5rem;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    .image,
+    .content {
+      width: calc(50% - 0.75rem);
+    }
+    .content {
+      p {
+        margin-bottom: 2rem;
+      }
+      ul {
+        margin-bottom: 3rem;
+        li {
+          font-size: 0.938rem;
+          margin-bottom: 0.5rem;
+          svg {
+            color: $first-color;
+            margin-right: 1rem;
+          }
+        }
+      }
+      .my-btn {
+        padding: 0;
+        background-color: transparent;
+        color: $first-color;
+      }
+
+      @media (max-width: 991px) {
+        width: 100%;
+        order: -1;
+        text-align: center;
+        ul {
+          margin-bottom: 2rem;
+        }
+      }
+      @media (max-width: 480px) {
+        p {
+          font-size: 0.938rem;
+        }
+        ul li {
+          font-size: 0.875rem;
+          svg {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

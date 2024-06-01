@@ -1,0 +1,31 @@
+body {
+  font-family: $body-font;
+  position: relative;
+  overflow-x: hidden;
+
+  background-color: $body-color;
+  color: $text-color;
+  transition: 0.4s; // For animation dark mode
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: -3rem;
+  right: 2rem;
+  width:  2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: $first-color;
+  color: hsl(152, 4%, 75%);
+  cursor: pointer;
+  transition: .2s;
+  z-index: 1000;
+  &:hover {
+    color: hsl(152, 4%, 95%);
+  }
+}
+
+
+

@@ -1,0 +1,110 @@
+nav {
+  background-color: white;
+  transition: 0.2s;
+  .navbar-brand {
+    svg {
+      color: $first-color;
+    }
+    color: $title-color;
+    span {
+      transition: 0.2s;
+    }
+  }
+  .navbar-toggler {
+    font-size: 1.25rem;
+    order: 2;
+    span {
+      color: $title-color;
+    }
+    span svg {
+      transition: 0.2s !important;
+    }
+  }
+
+  .navbar-nav {
+    .close-icon {
+      display: none;
+      color: $title-color !important;
+      font-size: 1.25rem;
+      cursor: pointer;
+      width: fit-content;
+      margin-left: auto;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      svg {
+        transition: 0.2s;
+      }
+    }
+    .nav-item {
+      font-weight: 500 !important;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      display: flex;
+      align-items: center;
+      .nav-link {
+        transition: 0.2s;
+        color: $title-color;
+        padding: 0 !important;
+        position: relative;
+        &.active {
+          color: $first-color !important;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 40%;
+            height: 0.12rem;
+            background-color: $first-color;
+          }
+        }
+        &:hover {
+          color: $first-color !important ;
+        }
+        &:visited {
+          color: $title-color;
+        }
+      }
+    }
+    @media (max-width: 991px) {
+      padding: 1.5rem;
+      position: absolute;
+      z-index: 20;
+      height: 100vh;
+      width: 20rem;
+      top: 0;
+      right: -21rem;
+      background-color: white;
+      box-shadow: -2px 0 4px hsla(152, 24%, 15%, 0.1);
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      transition: 0.3s;
+      .nav-item {
+        padding-top: 1.5rem;
+        .nav-link {
+          width: fit-content;
+        }
+      }
+      .close-icon {
+        display: block;
+      }
+    }
+  }
+  .mood-icon {
+    color: $title-color;
+    font-size: 1.25rem;
+    padding-left: 1.5rem;
+    @media (max-width: 991px) {
+      padding-right: 1.5rem;
+    }
+    svg {
+      transition: 0.2s;
+      cursor: pointer;
+    }
+  }
+  * {
+    :hover {
+      color: $first-color !important ;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.section-head {
+  color: $title-color;
+  font-size: 2.7rem;
+  margin-bottom: 1.5rem;
+  @media (max-width: 1199px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 767px) {
+    font-size: 2.2rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+  }
+}

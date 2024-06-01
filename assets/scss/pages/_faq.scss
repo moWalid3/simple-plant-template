@@ -1,0 +1,70 @@
+.faq {
+  background-color: $first-color-lighten;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  .item {
+    background-color: white;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 3.3rem;
+    overflow: hidden;
+    &:hover {
+      box-shadow: 0 2px 8px hsla(152, 4%, 15%, 0.15);
+    }
+    h3 {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $title-color;
+      margin-bottom: 0;
+      transition: 0.3s;
+      span {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-right: 0.5rem;
+        transition: transform 0.3s;
+      }
+    }
+    p {
+      display: block;
+      font-size: 0.875rem;
+      margin-top: 1rem;
+      margin-left: 1.688rem;
+      line-height: 2;
+    }
+    @media (max-width: 391px) {
+      h3 {
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+    }
+    &.show {
+      background-color: $first-color;
+      color: white;
+      height: 8.8rem;
+      @media (max-width: 1199px) {
+        height: 10.55rem;
+      }
+      @media (max-width: 991px) {
+        height: 8.8rem;
+      }
+      @media (max-width: 519px) {
+        height: 10.55rem;
+      }
+      @media (max-width: 391px) {
+        height: 12.3rem;
+        h3 {
+          font-size: 0.95rem;
+        }
+      }
+      h3 {
+        color: white;
+        span {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}

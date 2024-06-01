@@ -1,0 +1,99 @@
+body.dark-theme {
+  $first-color-dark: hsl(152, 8%, 20%);
+  $title-color: hsl(152, 4%, 95%);
+  $text-color: hsl(152, 4%, 75%);
+  $body-color: hsl(152, 8%, 12%);
+  $container-color: hsl(152, 8%, 16%);
+
+  background-color: $body-color;
+  color: $text-color;
+
+  nav {
+    background-color: $body-color;
+    box-shadow: 0 1px 4px hsla(152, 4%, 4%, 0.3);
+    .nav-link,
+    .navbar-brand span,
+    .close-icon,
+    .mood-icon,
+    .navbar-toggler span {
+      color: $title-color !important;
+    }
+    .navbar-brand {
+      :hover {
+        color: $first-color !important ;
+      }
+    }
+    .navbar-nav {
+      @media (max-width: 991px) {
+        background-color: $container-color;
+      }
+    }
+  }
+
+  .landing {
+    h1 {
+      color: $title-color;
+    }
+  }
+
+  .section-head {
+    color: $title-color;
+  }
+
+  h3,
+  h4 {
+    color: $title-color !important;
+  }
+
+  .steps {
+    .container {
+      background-color: $first-color-dark;
+    }
+    .box {
+      background-color: $container-color !important;
+    }
+  }
+
+  .products {
+    .image {
+      &::before {
+        background-color: $container-color !important;
+      }
+    }
+    .price {
+      color: $title-color !important;
+    }
+  }
+
+  .faq {
+    background-color: $first-color-dark;
+    .item {
+      background-color: $container-color;
+      &.show {
+        background-color: $first-color;
+      }
+    }
+  }
+
+  .contact {
+    input,
+    textarea {
+      color: $text-color !important;
+    }
+  }
+
+  footer {
+    .logo {
+      color: $title-color;
+      &:hover {
+        color: $first-color;
+      }
+    }
+    .subscribe-box {
+      background-color: $container-color;
+    }
+    .social {
+      color: $text-color;
+    }
+  }
+}
